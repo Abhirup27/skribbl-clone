@@ -1,0 +1,26 @@
+{
+  "name": "skribbl-clone",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:web": "pnpm --filter web-server dev",
+    "dev:game": "pnpm --filter game-server dev",
+    "dev:discord": "pnpm --filter discord-service start:dev",
+    "dev:all": "concurrently \"pnpm dev:frontend\" \"pnpm dev:game\" \"pnpm dev:discord\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "concurrently": "^8.2.0",
+    "eslint": "^9.38.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.45.0"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.5",
+    "dotenv": "^17.2.3"
+  }
+}
