@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "build:database": "pnpm --filter @shared/db build",
     "dev:frontend": "pnpm --filter frontend dev",
     "dev:web": "pnpm --filter web-server dev",
     "dev:game": "pnpm --filter game-server dev",
@@ -20,6 +21,8 @@
     "typescript-eslint": "^8.45.0"
   },
   "dependencies": {
+    "@shared/db": "workspace:*",
+    "shared": "workspace:*",
     "@types/express": "^5.0.5",
     "dotenv": "^17.2.3"
   }

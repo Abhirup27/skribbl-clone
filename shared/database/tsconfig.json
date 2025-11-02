@@ -1,0 +1,11 @@
+{
+  // "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "declaration": true,
+    "experimentalDecorators": true
+  },
+  "include": ["migrations/*", "entities/*", "index.ts", "typeorm.config.ts"]
+}

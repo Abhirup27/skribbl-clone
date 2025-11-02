@@ -10,9 +10,12 @@
     "start": "node dist/main.js"
   },
   "dependencies": {
+    "@shared/db": "workspace:*",
     "express": "^5.1.0",
     "game-server": "^0.0.3",
     "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "typeorm": "^0.3.27",
     "zod": "^4.1.12"
   },
   "devDependencies": {
