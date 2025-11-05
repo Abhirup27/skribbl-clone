@@ -1,29 +1,31 @@
 {
   "name": "skribbl-clone",
-  "private": true,
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build:database": "pnpm --filter @shared/db build",
-    "dev:frontend": "pnpm --filter frontend dev",
-    "dev:web": "pnpm --filter web-server dev",
-    "dev:game": "pnpm --filter game-server dev",
-    "dev:discord": "pnpm --filter discord-service start:dev",
-    "dev:all": "concurrently \"pnpm dev:frontend\" \"pnpm dev:game\" \"pnpm dev:discord\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "common": "pnpm --filter common",
+    "web-server": "pnpm --filter web-server",
+    "game-server": "pnpm --filter game-server"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0",
+  "type": "module",
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@types/node": "^24.6.0",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
-    "concurrently": "^8.2.0",
-    "eslint": "^9.38.0",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.45.0"
-  },
-  "dependencies": {
-    "@shared/db": "workspace:*",
-    "shared": "workspace:*",
-    "@types/express": "^5.0.5",
-    "dotenv": "^17.2.3"
+    "@eslint/css": "^0.14.0",
+    "@eslint/js": "^9.39.1",
+    "@eslint/json": "^0.13.2",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.46.3"
   }
 }
